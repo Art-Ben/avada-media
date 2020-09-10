@@ -19,7 +19,7 @@ $image_banner = get_field('spacelab_hero-use-video')  ? '' : get_field('spacelab
                             <?php
                                 if( get_field('spacelab_hero-logo') ) {
                             ?>
-                            <img src="<?= get_field('spacelab_hero-logo'); ?>" alt="Avada Media SpaceLab">
+                            <img src="<?= get_field('spacelab_hero-logo'); ?>" alt="Avada Media SpaceLab" class="spaceLab__hero--image">
                             <?php
                                 }
                             ?>
@@ -97,7 +97,7 @@ $image_banner = get_field('spacelab_hero-use-video')  ? '' : get_field('spacelab
             </div>
         </section>
 
-        <section class="about section bgFixed spaceLabVideoBlock" style-img="<?=webPMagic( get_field('spacelab_videoblock_bg') )?>">
+        <section class="about section bgFixed spaceLabVideoBlock bgDark" style-img="<?=webPMagic( get_field('spacelab_videoblock_bg') )?>">
             <?php if (get_field('spacelab_videoblock_file')) { ?>
                 <video class="bgVideo noAutoPlay" poster-img="<?=webPMagic( get_field('spacelab_videoblock_bg') )?>">
                     <source src="<?= get_field('spacelab_videoblock_file'); ?>" type="video/mp4">
@@ -108,8 +108,8 @@ $image_banner = get_field('spacelab_hero-use-video')  ? '' : get_field('spacelab
                     <div class="col-12">
                         <div class="innerBlock">
                             
-                            <svg class="svgIcon spaceLabLogo">
-                                <use xlink:href="spaceLabLogoBig"></use>
+                            <svg class="svgIcon spaceLabVideoBLockLogo1">
+                                <use xlink:href="#spaceLabLogoBig"></use>
                             </svg>
 
                             <?php if (get_field('spacelab_videoblock_file')) { ?>
@@ -140,7 +140,7 @@ $image_banner = get_field('spacelab_hero-use-video')  ? '' : get_field('spacelab
                             ?>
                             <div class="item">
                                 <div class="icon">
-                                    <?= get_sub_field('icon'); ?>
+                                    <img src="<?= get_sub_field('icon'); ?>" alt="<?= get_sub_field('txt'); ?>" alt="<?= get_sub_field('txt'); ?>">
                                 </div>
                                 <div class="txt">
                                     <?= get_sub_field('txt'); ?>
@@ -196,14 +196,14 @@ $image_banner = get_field('spacelab_hero-use-video')  ? '' : get_field('spacelab
                 while( have_rows('spacelab_cources') ) {
                     the_row();
         ?>
-        <section class="section spaceLabCources" style-img="<?=webPMagic( get_sub_field('spacelab_cource_bg') )?>">
+        <section class="section spaceLabCources bgDark" style-img="<?= webPMagic( get_sub_field('spacelab_cource_bg') ); ?>">
             <div class="container">
                 <div class="spaceLabCources__info <?= get_sub_field('position'); ?>">
                     <div class="col-12">
                         <div class="mainTitle"> 
                             <span class="sectionTitle"><?= get_sub_field('spacelab_cource_subtitle');?> </span>
                             <p class="sectionSubTitle">
-                                <?= get_field('spacelab_about_title'); ?>
+                                <?= get_sub_field('spacelab_cource_title'); ?>
                                 <span class="shadowText"><?= get_sub_field('spacelab_cource_title'); ?></span>
                             </p>
                         </div>
