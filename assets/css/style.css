@@ -571,3 +571,43 @@ ul.termsLists li:last-child span.termItemInner{
 .cst-mobile-video {
     background-image: unset;
 }
+
+/*--- new page (SpaceLab) ---*/
+.mainBtn.bgBlack {
+    color: #000;
+}
+
+.mainBtn.bgBlack .decorUnderline::before {
+    background-color: #000;
+}
+
+.mainBtn.bgBlack .decorUnderline::after {
+    background-color: #000;
+}
+
+.mainBtn.bgBlack::after {
+    background-color: #000;
+}
+
+.about .spaceLab__hero {
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.about .spaceLab__hero--title {
+    width: 100%;
+    text-align: left;
+    font-size: 48px;
+    line-break: 56px;
+}
+
+.about .spaceLab__hero--subtitle {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0;
+    font-size: ;
+}
+/*--- END ---*/
