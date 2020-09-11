@@ -689,4 +689,86 @@ ul.termsLists li:last-child span.termItemInner{
     width: calc(100% - 85px);
 }
 
+.spaceLabCources .sectionTitle {
+    margin-bottom: 45px;
+    color: #fff;
+}
+
+.spaceLabCources .container {
+    height: 100%;
+}
+
+.spaceLabCources .spaceLabCources__info .line {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.spaceLabCources .spaceLabCources__info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.spaceLabCources .spaceLabCources__info.top_left {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.spaceLabCources .spaceLabCources__info.top_right {
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.spaceLabCources .spaceLabCources__info.bottom_left {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.spaceLabCources .spaceLabCources__info.bottom_right {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.spaceLabCources .spaceLabCources__info.bottom_right .line_title {
+    justify-content: flex-end;
+}
+
+.spaceLabCources .mainTitle .sectionTitle::after,
+.spaceLabCources .mainTitle .sectionTitle::before {
+    background: #fff;
+}
+
+.spaceLabCources .mainTitle .sectionTitle + .sectionSubTitle .shadowText {
+    top: -30px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+}
+
+.spaceLabCources .mainTitle .sectionTitle + .sectionSubTitle {
+    margin-left: 40px;
+    color: #fff;
+    padding-left: 105px;
+}
+
+.spaceLabCources .spaceLabCource__txt {
+    margin-top: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: rgba(255,255,255, .7);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 50px;
+    margin-left:120px;
+}
+
+.spaceLabCources .mainBtn {
+    margin-left: 120px;
+}
+
 /*--- END ---*/

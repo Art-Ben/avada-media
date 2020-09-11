@@ -199,7 +199,7 @@ $image_banner = get_field('spacelab_hero-use-video')  ? '' : get_field('spacelab
         <section class="section spaceLabCources bgDark" style-img="<?= webPMagic( get_sub_field('spacelab_cource_bg') ); ?>">
             <div class="container">
                 <div class="spaceLabCources__info <?= get_sub_field('position'); ?>">
-                    <div class="col-12">
+                    <div class="line line_title">
                         <div class="mainTitle"> 
                             <span class="sectionTitle"><?= get_sub_field('spacelab_cource_subtitle');?> </span>
                             <p class="sectionSubTitle">
@@ -208,19 +208,18 @@ $image_banner = get_field('spacelab_hero-use-video')  ? '' : get_field('spacelab
                             </p>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="line line_text">
                         <div class="spaceLabCource__txt">
                             <?= get_sub_field('cource_txt');?>
                         </div>
-                    </div>
-
-                    <div class="col-12 flex justify-content-center flex-row d-flex flex-wrap">
-                        <button class="mainBtn bgBlack">
-                            <?php
-                                string_translate('Register', 'Зарегистрироваться')
-                            ?>
-                            <span class="decorUnderline"></span>
-                        </button>
+                        <div class="line line_btn">
+                            <button class="mainBtn">
+                                <?php
+                                    string_translate('Register', 'Зарегистрироваться')
+                                ?>
+                                <span class="decorUnderline"></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
